@@ -11,10 +11,16 @@ import java.util.List;
 public class ToDoListManager {
     List<ToDoList> manager = new ArrayList<>();
     String fileLocation;
-    File file = new File(fileLocation);
+    String fileName;
+    File file = new File(fileLocation + "/" + fileName);
 
     public String getFileLocation() {
         //returns file location provided by user
+        return null;
+    }
+
+    public String getFileLName() {
+        //returns file name provided by user
         return null;
     }
 

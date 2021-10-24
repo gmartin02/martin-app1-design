@@ -8,9 +8,10 @@ class Application {
 }
 
 class ToDoListManager {
-    List<ToDoList> manager = new ArrayList<>();
-    String fileLocation;
-    File file = new File(fileLocation);
+    List<ToDoList> manager = new ArrayList<>()
+    String fileLocation
+    String fileName
+    File file = new File(fileLocation + "/" + fileName)
 
     getFileLocation(): String
     deleteList(ToDoList tdl)
@@ -20,8 +21,8 @@ class ToDoListManager {
 
 class ToDoList {
 String title;
-    List<Item> itemList = new ArrayList<>();
-    boolean selected = false;
+    List<Item> itemList = new ArrayList<>()
+    boolean selected = false
 
     getTitle(): String
     removeItem(Item item)
@@ -32,10 +33,10 @@ String title;
 }
 
 class Item {
-    String name;
-    String description;
-    String dueDate;
-    boolean completion = false;
+    String name
+    String description
+    String dueDate
+    boolean completion = false
 
     getName(): String
     getDescription(): String

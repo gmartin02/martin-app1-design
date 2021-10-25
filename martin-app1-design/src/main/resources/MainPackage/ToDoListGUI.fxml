@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPackage.ToDoListGUIController">
    <children>
       <Label contentDisplay="BOTTOM" text="Welcome to OhWhatToDo!">
          <padding>
@@ -25,17 +25,17 @@
       </ImageView>
       <HBox prefHeight="100.0" prefWidth="200.0" spacing="160.0" translateY="200.0">
          <children>
-            <Button mnemonicParsing="false" text="Create List">
+            <Button fx:id="createList" mnemonicParsing="false" onMouseClicked="#changeToMakeNewFileSceneOnButtonPress" text="Create List">
                <font>
                   <Font size="20.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" text="Load List">
+            <Button fx:id="loadList" mnemonicParsing="false" onMouseClicked="#changeToLoadFileSceneOnButtonPress" text="Load List">
                <font>
                   <Font size="20.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" text="Exit">
+            <Button fx:id="exit" mnemonicParsing="false" onMouseClicked="#closeWindowOnExitButtonPress" text="Exit">
                <font>
                   <Font size="20.0" />
                </font>

@@ -10,7 +10,7 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPackage.Application">
    <children>
-      <Label contentDisplay="BOTTOM" text="Enter the name of the file you want to create below!">
+      <Label contentDisplay="BOTTOM" text="Enter the name of the file you want to load in below!">
          <padding>
             <Insets left="110.0" top="40.0" />
          </padding>
